@@ -7,7 +7,7 @@ about:
   head: a813038
   archived: false
   latestVersion: v0.4.0
-  collectedAt: 2026-09-04T19:24:59Z
+  collectedAt: 2026-09-04T21:14:00Z
 timeline:
   created: 2019-02-10
   lastCommit: 2022-07-13
@@ -86,6 +86,64 @@ total:
   openIssue: 16
   commit: 190
 ---
+path: /home/runner/.x-repo/github.com/dduan/tre
+collectedAt: 2026-09-04T21:14:00Z
+loc:
+  Rust:
+    code: 1084
+    comments: 8
+    blanks: 106
+    files: 10
+  Bash:
+    code: 67
+    comments: 0
+    blanks: 3
+    files: 1
+  PowerShell:
+    code: 47
+    comments: 0
+    blanks: 5
+    files: 1
+  Elvish:
+    code: 44
+    comments: 0
+    blanks: 2
+    files: 1
+  Nix:
+    code: 40
+    comments: 1
+    blanks: 2
+    files: 1
+  Toml:
+    code: 34
+    comments: 0
+    blanks: 4
+    files: 1
+  Makefile:
+    code: 19
+    comments: 0
+    blanks: 5
+    files: 1
+  Python:
+    code: 12
+    comments: 1
+    blanks: 3
+    files: 1
+  Fish:
+    code: 11
+    comments: 0
+    blanks: 0
+    files: 1
+  Markdown:
+    code: 0
+    comments: 199
+    blanks: 86
+    files: 3
+total:
+  code: 1363
+  comments: 224
+  blanks: 216
+  files: 21
 ---
 date: "2026-08-24"
 repo:
