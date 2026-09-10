@@ -22,11 +22,23 @@ x install tre
 - **Latest**: `v0.4.0` (2022-06-19)
 - **Last commit**: 2022-07-13
 - **Assets in release**: 8
-- **Published**: 2022-06-19T20:15:27Z
+
+## Release assets
+
+| Asset | Size | Target |
+|-------|-----:|--------|
+| [tre-v0.4.0-aarch64-apple-darwin.tar.gz](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-aarch64-apple-darwin.tar.gz) | 634.4 KiB | `native/darwin/arm64` |
+| [tre-v0.4.0-arm-unknown-linux-gnueabihf.tar.gz](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-arm-unknown-linux-gnueabihf.tar.gz) | 682.9 KiB | `native/linux/arm/glibc` |
+| [tre-v0.4.0-i686-pc-windows-msvc.zip](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-i686-pc-windows-msvc.zip) | 667.5 KiB | `native/win/x64` |
+| [tre-v0.4.0-x86_64-apple-darwin.tar.gz](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-apple-darwin.tar.gz) | 701.8 KiB | `native/darwin/x64` |
+| [tre-v0.4.0-x86_64-pc-windows-gnu.zip](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-pc-windows-gnu.zip) | 2.3 MiB | `native/win/x64` |
+| [tre-v0.4.0-x86_64-pc-windows-msvc.zip](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-pc-windows-msvc.zip) | 667.5 KiB | `native/win/x64` |
+| [tre-v0.4.0-x86_64-unknown-linux-musl.tar.gz](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-unknown-linux-musl.tar.gz) | 783.0 KiB | `native/linux/x64/musl` |
+| [tre-v0.4.1-x86_64-pc-windows-msvc.msi](https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.1-x86_64-pc-windows-msvc.msi) | 1000.0 KiB | `native/win/x64` |
 
 ## Popularity
 
-- **Stars**: 1,224 · **Forks**: 31 · **Open issues**: 48 · **Contributors**: 4
+- **Stars**: 1,223 · **Forks**: 31 · **Open issues**: 48 · **Contributors**: 4
 
 ## Totals (cumulative)
 
@@ -67,8 +79,8 @@ Lowest-scoring checks:
 Install metadata for tre lives in the [x-cmd/install](https://github.com/x-cmd/install) index — a curated YAML package list that x-cmd consumes at install time. If `tre` is missing, out of date, or installs incorrectly, please open an issue or PR there:
 
 - **Open an issue**: <https://github.com/x-cmd/install/issues/new>
-- **Edit the package entry**: <https://github.com/x-cmd/edit/main/tre.yml> (or whichever path the index uses)
+- **Edit the package entry**: <https://github.com/x-cmd/install/edit/main/tre.yml> (or whichever path the index uses)
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T04:56:42Z._
+_Snapshot: `data/card/260910.yml` · 2026-09-10T16:32:46Z._
