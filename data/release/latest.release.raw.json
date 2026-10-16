@@ -67,7 +67,7 @@
       "state": "uploaded",
       "size": 649645,
       "digest": null,
-      "download_count": 1090,
+      "download_count": 1092,
       "created_at": "2022-06-19T20:21:01Z",
       "updated_at": "2022-06-19T20:21:01Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-aarch64-apple-darwin.tar.gz"
@@ -139,7 +139,7 @@
       "state": "uploaded",
       "size": 683523,
       "digest": null,
-      "download_count": 297,
+      "download_count": 298,
       "created_at": "2022-06-19T20:20:37Z",
       "updated_at": "2022-06-19T20:20:38Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-i686-pc-windows-msvc.zip"
@@ -211,7 +211,7 @@
       "state": "uploaded",
       "size": 2399276,
       "digest": null,
-      "download_count": 305,
+      "download_count": 306,
       "created_at": "2022-06-19T20:21:17Z",
       "updated_at": "2022-06-19T20:21:18Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-pc-windows-gnu.zip"
@@ -247,7 +247,7 @@
       "state": "uploaded",
       "size": 683523,
       "digest": null,
-      "download_count": 3180,
+      "download_count": 3184,
       "created_at": "2022-06-19T20:20:10Z",
       "updated_at": "2022-06-19T20:20:10Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-pc-windows-msvc.zip"
@@ -283,7 +283,7 @@
       "state": "uploaded",
       "size": 801776,
       "digest": null,
-      "download_count": 8644,
+      "download_count": 8659,
       "created_at": "2022-06-19T20:19:30Z",
       "updated_at": "2022-06-19T20:19:30Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.0-x86_64-unknown-linux-musl.tar.gz"
@@ -319,7 +319,7 @@
       "state": "uploaded",
       "size": 1024000,
       "digest": null,
-      "download_count": 4764,
+      "download_count": 4771,
       "created_at": "2022-06-20T04:23:21Z",
       "updated_at": "2022-06-20T04:23:23Z",
       "browser_download_url": "https://github.com/dduan/tre/releases/download/v0.4.0/tre-v0.4.1-x86_64-pc-windows-msvc.msi"
