@@ -1,123 +1,19 @@
+- repo: cygwin
+  srcname: tre
+  binname: agrep
+  visiblename: agrep
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  summary: Regexp matching library
+  maintainers:
+    - andrew.schulman@cygwin
+  licenses:
+    - BSD-2-Clause
+  categories:
+    - Utils
 - repo: deepin_unstable
   subrepo: main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-6
-  status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: deepin_23
-  subrepo: main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-7
-  status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - misc
-- repo: deepin_25
-  subrepo: main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-7
-  status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-6
-  status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-2
-  status: newest
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: slackbuilds
-  srcname: libraries/tre
-  visiblename: libraries/tre
-  version: 0.9.0
-  origversion: null
-  status: newest
-  maintainers:
-    - urchlay@slackware.uk
-  categories:
-    - libraries
-- repo: cygwin
-  srcname: tre
-  binname: libtre5
-  visiblename: libtre5
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Regexp matching library
-  maintainers:
-    - andrew.schulman@cygwin
-  licenses:
-    - BSD-2-Clause
-  categories:
-    - Libs
-- repo: cygwin
-  srcname: tre
-  binname: tre-debuginfo
-  visiblename: tre-debuginfo
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Regexp matching library
-  maintainers:
-    - andrew.schulman@cygwin
-  licenses:
-    - BSD-2-Clause
-  categories:
-    - Debug
-- repo: debian_11
-  subrepo: bullseye/main
   srcname: tre
   binnames:
     - libtre5
@@ -351,20 +247,6 @@
   status: outdated
 - repo: cygwin
   srcname: tre
-  binname: agrep
-  visiblename: agrep
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Regexp matching library
-  maintainers:
-    - andrew.schulman@cygwin
-  licenses:
-    - BSD-2-Clause
-  categories:
-    - Utils
-- repo: cygwin
-  srcname: tre
   binname: libtre-devel
   visiblename: libtre-devel
   version: 0.9.0
@@ -377,17 +259,50 @@
     - BSD-2-Clause
   categories:
     - Devel
-- repo: stalix_dev
-  srcname: bin/agrep
-  binname: bin/agrep
-  visiblename: bin/agrep
+- repo: cygwin
+  srcname: tre
+  binname: libtre5
+  visiblename: libtre5
   version: 0.9.0
-  origversion: null
+  origversion: 0.9.0-1
   status: newest
+  summary: Regexp matching library
   maintainers:
-    - anton@samokhvalov.xyz
+    - andrew.schulman@cygwin
+  licenses:
+    - BSD-2-Clause
   categories:
-    - bin
+    - Libs
+- repo: cygwin
+  srcname: tre
+  binname: tre-debuginfo
+  visiblename: tre-debuginfo
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  summary: Regexp matching library
+  maintainers:
+    - andrew.schulman@cygwin
+  licenses:
+    - BSD-2-Clause
+  categories:
+    - Debug
+- repo: debian_11
+  subrepo: bullseye/main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-6
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
 - repo: debian_12
   subrepo: bookworm/main
   srcname: tre
@@ -438,6 +353,70 @@
     - libs
 - repo: debian_unstable
   subrepo: sid/main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-2
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
+- repo: deepin_23
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-7
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - misc
+- repo: deepin_25
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-7
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-6
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
+- repo: devuan_unstable
+  subrepo: unstable/main
   srcname: tre
   binnames:
     - libtre5
@@ -782,6 +761,18 @@
     - BSD-2
   categories:
     - dev-libs
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: tre
+  visiblename: tre
+  version: 0.8.0_git201402282055
+  origversion: 0.8.0_git201402282055-bp155.5.6
+  status: outdated
+  summary: POSIX compatible regexp library with approximate matching
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - System/Libraries
 - repo: liguros_stable
   srcname: dev-libs/tre
   visiblename: dev-libs/tre
@@ -808,17 +799,6 @@
     - BSD-2
   categories:
     - dev-libs
-- repo: stalix
-  srcname: bin/agrep
-  binname: bin/agrep
-  visiblename: bin/agrep
-  version: 0.9.0
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
 - repo: liguros_develop
   srcname: dev-libs/tre
   visiblename: dev-libs/tre
@@ -929,6 +909,22 @@
   summary: POSIX compliant regexp matching library. Includes agrep for approximate grepping.
   licenses:
     - custom:BSD
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-7
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
 - repo: msys2_clang64
   srcname: mingw-w64-libtre
   binname: mingw-w64-clang-x86_64-libtre
@@ -974,19 +970,6 @@
 - repo: msys2_msys2
   subrepo: x86_64
   srcname: libtre
-  binname: libtre
-  visiblename: libtre
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: The free and portable approximate regex matching library (libraries)
-  licenses:
-    - BSD
-  categories:
-    - libraries
-- repo: msys2_msys2
-  subrepo: x86_64
-  srcname: libtre
   binname: libtre-devel
   visiblename: libtre-devel
   version: 0.9.0
@@ -997,6 +980,19 @@
     - BSD
   categories:
     - development
+- repo: msys2_msys2
+  subrepo: x86_64
+  srcname: libtre
+  binname: libtre
+  visiblename: libtre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  summary: The free and portable approximate regex matching library (libraries)
+  licenses:
+    - BSD
+  categories:
+    - libraries
 - repo: msys2_ucrt64
   srcname: mingw-w64-libtre
   binname: mingw-w64-ucrt-x86_64-libtre
@@ -1123,6 +1119,18 @@
     - BSD
   categories:
     - Unspecified
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: tre
+  visiblename: tre
+  version: 0.8.0_git201402282055
+  origversion: 0.8.0_git201402282055-bp156.6.6
+  status: outdated
+  summary: POSIX compatible regexp library with approximate matching
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - System/Libraries
 - repo: openeuler_22_03_lts_sp4
   srcname: tre
   binnames:
@@ -1161,26 +1169,6 @@
     - BSD-2-Clause
   categories:
     - Unspecified
-- repo: rosa_13
-  subrepo: contrib/release
-  srcname: tre
-  binnames:
-    - agrep
-    - lib64tre5
-    - lib64tre-devel
-    - tre-debuginfo
-    - tre-debugsource
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Lightweight, robust, and efficient POSIX compliant regexp matching library
-  maintainers:
-    - alexander@mezon.ru
-  licenses:
-    - BSD
-  categories:
-    - System/Libraries
 - repo: openeuler_24_03_lts_sp1
   srcname: tre
   binnames:
@@ -1219,6 +1207,22 @@
     - BSD-2-Clause
   categories:
     - Unspecified
+- repo: raspbian_stable
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
 - repo: openeuler_25_03
   srcname: tre
   binnames:
@@ -1256,14 +1260,13 @@
     - libtre
     - libtre-devel
     - agrep
-    - libtre-debug
   visiblename: libtre
   version: 0.9.0
-  origversion: 0.9.0-1mamba
+  origversion: 0.9.0-2mamba
   status: newest
   summary: Free and portable approximate regex matching library
   maintainers:
-    - silvan.calarco@mambasoft.it
+    - silvan@openmamba.org
   licenses:
     - BSD
   categories:
@@ -1379,30 +1382,6 @@
     - GPL
   categories:
     - RegExp
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: tre
-  visiblename: tre
-  version: 0.8.0_git201402282055
-  origversion: 0.8.0_git201402282055-bp155.5.6
-  status: outdated
-  summary: POSIX compatible regexp library with approximate matching
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - System/Libraries
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: tre
-  visiblename: tre
-  version: 0.8.0_git201402282055
-  origversion: 0.8.0_git201402282055-bp156.6.6
-  status: outdated
-  summary: POSIX compatible regexp library with approximate matching
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - System/Libraries
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: tre
@@ -1487,7 +1466,7 @@
   categories:
     - libs
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: tre
   binnames:
     - libtre5
@@ -1503,7 +1482,7 @@
   categories:
     - libs
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: tre
   binnames:
     - libtre5
@@ -1617,38 +1596,6 @@
     - pdm@debian.org
   categories:
     - libdevel
-- repo: raspbian_oldstable
-  subrepo: main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-7
-  status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: raspbian_stable
-  subrepo: main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
 - repo: raspbian_testing
   subrepo: main
   srcname: tre
@@ -1685,6 +1632,58 @@
     - BSD
   categories:
     - System/Libraries
+- repo: rosa_13
+  subrepo: contrib/release
+  srcname: tre
+  binnames:
+    - agrep
+    - lib64tre5
+    - lib64tre-devel
+    - tre-debuginfo
+    - tre-debugsource
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  summary: Lightweight, robust, and efficient POSIX compliant regexp matching library
+  maintainers:
+    - alexander@mezon.ru
+  licenses:
+    - BSD
+  categories:
+    - System/Libraries
+- repo: slackbuilds
+  srcname: libraries/tre
+  visiblename: libraries/tre
+  version: 0.9.0
+  origversion: null
+  status: newest
+  maintainers:
+    - urchlay@slackware.uk
+  categories:
+    - libraries
+- repo: stalix
+  srcname: bin/agrep
+  binname: bin/agrep
+  visiblename: bin/agrep
+  version: 0.9.0
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
+- repo: stalix_dev
+  srcname: bin/agrep
+  binname: bin/agrep
+  visiblename: bin/agrep
+  version: 0.9.0
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
 - repo: t2
   srcname: tre
   visiblename: tre
