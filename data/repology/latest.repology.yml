@@ -1,53 +1,14 @@
-- repo: raspbian_testing
-  subrepo: main
+- repo: pclinuxos
   srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-2
-  status: newest
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: pureos_byzantium
-  subrepo: byzantium/main
-  srcname: tre
-  binnames:
-    - libtre-dev
-    - libtre5
-    - tre-agrep
   visiblename: tre
   version: 0.8.0
-  origversion: 0.8.0-6
+  origversion: 0.8.0-1pclos2011
   status: outdated
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
+  summary: Lightweight, robust, and efficient POSIX compliant regexp matching library
   categories:
-    - libdevel
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: tre
-  binnames:
-    - libtre-dev
-    - libtre5
-    - tre-agrep
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libdevel
-- repo: raspbian_oldstable
-  subrepo: main
+    - System/Libraries
+- repo: ubuntu_16_04
+  subrepo: xenial/universe
   srcname: tre
   binnames:
     - libtre5
@@ -55,29 +16,33 @@
     - tre-agrep
   visiblename: tre
   version: 0.8.0
-  origversion: 0.8.0-7
+  origversion: 0.8.0-4
   status: outdated
   maintainers:
     - sanvila@debian.org
     - pdm@debian.org
   categories:
-    - libs
-- repo: raspbian_stable
-  subrepo: main
+    - universe/libs
+- repo: conancenter
   srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
   visiblename: tre
+  version: cci.20230717
+  origversion: null
+  status: outdated
+- repo: cygwin
+  srcname: tre
+  binname: libtre5
+  visiblename: libtre5
   version: 0.9.0
   origversion: 0.9.0-1
   status: newest
+  summary: Regexp matching library
   maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
+    - andrew.schulman@cygwin
+  licenses:
+    - BSD-2-Clause
   categories:
-    - libs
+    - Libs
 - repo: aix_osp
   srcname: tre
   visiblename: tre
@@ -102,6 +67,20 @@
   version: 0.8.0
   origversion: 0.8.0-2
   status: outdated
+- repo: cygwin
+  srcname: tre
+  binname: agrep
+  visiblename: agrep
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  summary: Regexp matching library
+  maintainers:
+    - andrew.schulman@cygwin
+  licenses:
+    - BSD-2-Clause
+  categories:
+    - Utils
 - repo: alpine_edge
   subrepo: testing
   srcname: tre
@@ -128,20 +107,6 @@
     - alhassanaraouf@disroot.org
   licenses:
     - BSD-2-Clause
-- repo: cygwin
-  srcname: tre
-  binname: libtre5
-  visiblename: libtre5
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Regexp matching library
-  maintainers:
-    - andrew.schulman@cygwin
-  licenses:
-    - BSD-2-Clause
-  categories:
-    - Libs
 - repo: alpine_edge
   subrepo: testing
   srcname: tre
@@ -303,26 +268,6 @@
   summary: The approximate regex matching library and agrep command line tool.
   licenses:
     - BSD-2
-- repo: conancenter
-  srcname: tre
-  visiblename: tre
-  version: cci.20230717
-  origversion: null
-  status: outdated
-- repo: cygwin
-  srcname: tre
-  binname: agrep
-  visiblename: agrep
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  summary: Regexp matching library
-  maintainers:
-    - andrew.schulman@cygwin
-  licenses:
-    - BSD-2-Clause
-  categories:
-    - Utils
 - repo: cygwin
   srcname: tre
   binname: libtre-devel
@@ -571,18 +516,6 @@
     - LicenseRef-Callaway-BSD
   categories:
     - Unspecified
-- repo: pkgsrc_current
-  srcname: devel/tre
-  binname: tre
-  visiblename: devel/tre
-  version: 0.8.0
-  origversion: null
-  status: outdated
-  summary: Lightweight and robust POSIX compliant regexp matching library
-  maintainers:
-    - agc@netbsd.org
-  categories:
-    - devel
 - repo: exherbo
   subrepo: alip
   srcname: dev-libs/tre
@@ -654,24 +587,6 @@
   categories:
     - Unspecified
 - repo: fedora_42
-  subrepo: release
-  srcname: tre
-  binnames:
-    - tre
-    - tre-common
-    - tre-devel
-    - python3-tre
-    - agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-47.20140228gitc2f5d13.fc42
-  status: legacy
-  summary: POSIX compatible regexp library with approximate matching
-  licenses:
-    - LicenseRef-Callaway-BSD
-  categories:
-    - Unspecified
-- repo: fedora_42
   subrepo: updates
   srcname: tre
   binnames:
@@ -689,6 +604,24 @@
   summary: POSIX compatible regexp library with approximate matching
   licenses:
     - BSD-2-Clause
+  categories:
+    - Unspecified
+- repo: fedora_42
+  subrepo: release
+  srcname: tre
+  binnames:
+    - tre
+    - tre-common
+    - tre-devel
+    - python3-tre
+    - agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-47.20140228gitc2f5d13.fc42
+  status: legacy
+  summary: POSIX compatible regexp library with approximate matching
+  licenses:
+    - LicenseRef-Callaway-BSD
   categories:
     - Unspecified
 - repo: fedora_43
@@ -725,6 +658,26 @@
   visiblename: tre
   version: 0.9.0
   origversion: 0.9.0-3.fc44
+  status: newest
+  summary: POSIX compatible regexp library with approximate matching
+  licenses:
+    - BSD-2-Clause
+  categories:
+    - Unspecified
+- repo: fedora_45
+  subrepo: release
+  srcname: tre
+  binnames:
+    - tre
+    - tre-common
+    - tre-devel
+    - python3-tre
+    - agrep
+    - tre-debuginfo
+    - tre-debugsource
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-6.fc45
   status: newest
   summary: POSIX compatible regexp library with approximate matching
   licenses:
@@ -776,12 +729,6 @@
     - BSD-2
   categories:
     - dev-libs
-- repo: pld
-  srcname: tre
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-2
-  status: newest
 - repo: gentoo
   srcname: dev-libs/tre
   visiblename: dev-libs/tre
@@ -901,6 +848,17 @@
     - BSD
   categories:
     - devel
+- repo: nix_stable_24_11
+  srcname: tre
+  visiblename: tre
+  version: 0.8.0
+  origversion: null
+  status: outdated
+  summary: Lightweight and robust POSIX compliant regexp matching library
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - BSD-2-Clause
 - repo: mageia_9
   subrepo: core/release
   srcname: tre
@@ -935,18 +893,6 @@
     - GPLv2+
   categories:
     - System/Libraries
-- repo: pkgsrc_2026_3
-  srcname: devel/tre
-  binname: tre
-  visiblename: devel/tre
-  version: 0.8.0
-  origversion: null
-  status: outdated
-  summary: Lightweight and robust POSIX compliant regexp matching library
-  maintainers:
-    - agc@netbsd.org
-  categories:
-    - devel
 - repo: mageia_cauldron
   subrepo: core/release
   srcname: tre
@@ -1075,17 +1021,6 @@
   licenses:
     - BSD
 - repo: nix_stable_24_05
-  srcname: tre
-  visiblename: tre
-  version: 0.8.0
-  origversion: null
-  status: outdated
-  summary: Lightweight and robust POSIX compliant regexp matching library
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - BSD-2-Clause
-- repo: nix_stable_24_11
   srcname: tre
   visiblename: tre
   version: 0.8.0
@@ -1296,6 +1231,22 @@
   summary: TRE - The free and portable approximate regex matching library.
   categories:
     - System/Libraries
+- repo: parrot
+  subrepo: parrot/main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
 - repo: openmamba
   subrepo: base
   srcname: libtre
@@ -1537,31 +1488,6 @@
     - pdm@debian.org
   categories:
     - libs
-- repo: parrot
-  subrepo: parrot/main
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.9.0
-  origversion: 0.9.0-1
-  status: newest
-  maintainers:
-    - sanvila@debian.org
-    - pdm@debian.org
-  categories:
-    - libs
-- repo: pclinuxos
-  srcname: tre
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-1pclos2011
-  status: outdated
-  summary: Lightweight, robust, and efficient POSIX compliant regexp matching library
-  categories:
-    - System/Libraries
 - repo: pkgsrc_2026_2
   srcname: devel/tre
   binname: tre
@@ -1574,6 +1500,36 @@
     - agc@netbsd.org
   categories:
     - devel
+- repo: pkgsrc_2026_3
+  srcname: devel/tre
+  binname: tre
+  visiblename: devel/tre
+  version: 0.8.0
+  origversion: null
+  status: outdated
+  summary: Lightweight and robust POSIX compliant regexp matching library
+  maintainers:
+    - agc@netbsd.org
+  categories:
+    - devel
+- repo: pkgsrc_current
+  srcname: devel/tre
+  binname: tre
+  visiblename: devel/tre
+  version: 0.8.0
+  origversion: null
+  status: outdated
+  summary: Lightweight and robust POSIX compliant regexp matching library
+  maintainers:
+    - agc@netbsd.org
+  categories:
+    - devel
+- repo: pld
+  srcname: tre
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-2
+  status: newest
 - repo: pureos_amber
   subrepo: amber/main
   srcname: tre
@@ -1590,6 +1546,86 @@
     - pdm@debian.org
   categories:
     - libdevel
+- repo: pureos_byzantium
+  subrepo: byzantium/main
+  srcname: tre
+  binnames:
+    - libtre-dev
+    - libtre5
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-6
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libdevel
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: tre
+  binnames:
+    - libtre-dev
+    - libtre5
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libdevel
+- repo: raspbian_oldstable
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.8.0
+  origversion: 0.8.0-7
+  status: outdated
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
+- repo: raspbian_stable
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-1
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
+- repo: raspbian_testing
+  subrepo: main
+  srcname: tre
+  binnames:
+    - libtre5
+    - libtre-dev
+    - tre-agrep
+  visiblename: tre
+  version: 0.9.0
+  origversion: 0.9.0-2
+  status: newest
+  maintainers:
+    - sanvila@debian.org
+    - pdm@debian.org
+  categories:
+    - libs
 - repo: rosa_2019_1
   subrepo: contrib/release
   srcname: tre
@@ -1676,22 +1712,6 @@
   categories:
     - base/library
 - repo: ubuntu_14_04
-  subrepo: trusty/universe
-  srcname: tre
-  binnames:
-    - libtre5
-    - libtre-dev
-    - tre-agrep
-  visiblename: tre
-  version: 0.8.0
-  origversion: 0.8.0-3ubuntu1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - pdm@debian.org
-  categories:
-    - universe/libs
-- repo: ubuntu_14_04
   subrepo: trusty-updates/universe
   srcname: tre
   binnames:
@@ -1707,8 +1727,8 @@
     - pdm@debian.org
   categories:
     - universe/libs
-- repo: ubuntu_16_04
-  subrepo: xenial/universe
+- repo: ubuntu_14_04
+  subrepo: trusty/universe
   srcname: tre
   binnames:
     - libtre5
@@ -1716,10 +1736,10 @@
     - tre-agrep
   visiblename: tre
   version: 0.8.0
-  origversion: 0.8.0-4
+  origversion: 0.8.0-3ubuntu1
   status: outdated
   maintainers:
-    - sanvila@debian.org
+    - ubuntu-devel-discuss@lists.ubuntu.com
     - pdm@debian.org
   categories:
     - universe/libs
